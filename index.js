@@ -218,10 +218,19 @@ const baseOpen = async options => {
 			});
 		});
 	}
+	// https://github.com/sindresorhus/open/pull/289
+	else {
+		return new Promise((resolve, reject) => {
+			subprocess.stderr.on('data', (error) => {
+				reject(error.toString());
+			});
 
-	subprocess.unref();
-
-	return subprocess;
+			setTimeout(() => {
+				subprocess.unref();
+				resolve(subprocess);
+			}, 50)
+		})
+	}
 };
 
 const open = (target, options) => {
