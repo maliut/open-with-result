@@ -1,3 +1,5 @@
+forked from [sindresorhus/open](https://github.com/sindresorhus/open). Throw an error when open fails
+
 for example:
 ```js
 try {

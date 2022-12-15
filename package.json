@@ -1,15 +1,13 @@
 {
-	"name": "open",
-	"version": "8.4.0",
-	"description": "Open stuff like URLs, files, executables. Cross-platform.",
-	"license": "MIT",
-	"repository": "sindresorhus/open",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
-	},
+  "name": "open-with-result",
+  "version": "8.4.0",
+  "description": "Open stuff like URLs, files, executables. Cross-platform.",
+  "license": "MIT",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/maliut/open-with-result.git"
+  },
+  "author": "maliut <liuqt@hotmail.com>",
 	"engines": {
 		"node": ">=12"
 	},
